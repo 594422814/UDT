@@ -1,3 +1,4 @@
+## MatconvNet
 
 1. Download MatConvNet
 ```
@@ -12,7 +13,7 @@ run matlab/vl_compilenn
 3. Change the MatConvNet path in `training_env.m`
 
 
-## Training
+## Data
 
 1.Download the training data. (ILSVRC2015 and OxUvA)
 
@@ -27,7 +28,10 @@ cd training/dataPreprocessing
 
 As discussed in the paper, using more data slightly improves the performance
 
-3.Train an unsupervised model.
+
+## Training
+
+1. Train an unsupervised model.
 ```
 run train_UDT.m;
 ```
