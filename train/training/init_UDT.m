@@ -49,6 +49,9 @@ feature_sz = opts.inputSize([1,1]) - [4, 4];
 target_sz = opts.inputSize([1,1])/(1+opts.padding);
 sigma = sqrt(prod(target_sz))/10;
 
+% trajectory1: x to z1, using the initial label
+% trajectory2: z1 to z2, using the response map of z1 (i.e., s_label1)
+% trajectory3: z2 to x, using the response map of z2 (i.e., s_label2)
 trajectory1 = dagnn.DCF('win_size', feature_sz,'sigma', sigma) ;
 net.addLayer('trajectory1', trajectory1, {'x','z1', 'label'}, {'s_label1'}) ;
 trajectory2 = dagnn.DCF('win_size', feature_sz,'sigma', sigma) ;
@@ -56,6 +59,7 @@ net.addLayer('trajectory2', trajectory2, {'z1','z2', 's_label1'}, {'s_label2'}) 
 trajectory3 = dagnn.DCF('win_size', feature_sz,'sigma', sigma) ;
 net.addLayer('trajectory3', trajectory3, {'z2','x', 's_label2'}, {'res'}) ;
 
+% compute the consistency loss between the final `res` and initial 'label'
 ResponseLoss = dagnn.ResponseLossL2('win_size', feature_sz, 'sigma', sigma) ;
 net.addLayer('ResponseLoss', ResponseLoss, {'s_label1', 's_label2', 'res', 'label'}, 'objective') ;
 
