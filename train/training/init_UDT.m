@@ -56,8 +56,8 @@ net.addLayer('trajectory2', trajectory2, {'z1','z2', 's_label1'}, {'s_label2'}) 
 trajectory3 = dagnn.DCF('win_size', feature_sz,'sigma', sigma) ;
 net.addLayer('trajectory3', trajectory3, {'z2','x', 's_label2'}, {'res'}) ;
 
-ResponseLoss1 = dagnn.ResponseLossL2('win_size', feature_sz, 'sigma', sigma) ;
-net.addLayer('ResponseLoss1', ResponseLoss1, {'s_label1', 's_label2', 'res', 'label'}, 'objective') ;
+ResponseLoss = dagnn.ResponseLossL2('win_size', feature_sz, 'sigma', sigma) ;
+net.addLayer('ResponseLoss', ResponseLoss, {'s_label1', 's_label2', 'res', 'label'}, 'objective') ;
 
 % Fill in defaul values
 net.initParams();
