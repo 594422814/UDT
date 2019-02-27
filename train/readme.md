@@ -20,7 +20,9 @@ run matlab/vl_compilenn
 cd training/dataPreprocessing
 ```
 `run data_preprocessing` for ILSVRC2015 dataset
+
 `run data_preprocessing` for OxUvA long-term
+
 As discussed in the paper, using more data slightly improves the performance
 
 3.Train an unsupervised model.
