@@ -12,7 +12,7 @@ run matlab/vl_compilenn
 
 ## Training
 
-1.Download the training data. ([**VID**][**OxUvA**](data))
+1.Download the training data. (ILSVRC2015 and OxUvA)
 
 2.Data Preprocessing in MATLAB.
 
