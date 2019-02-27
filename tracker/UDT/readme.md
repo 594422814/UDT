@@ -12,3 +12,4 @@ Run the following command from the MATLAB command window:
 cd matconvnet
 run matlab/vl_compilenn
 ```
+[**Note**] Configure MatConvNet path in `tracking_env.m`
