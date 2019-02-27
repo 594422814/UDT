@@ -1,7 +1,7 @@
-1. Downloading MatConvNet
+To execute the tracker, you need:
 
+1. Downloading MatConvNet in this folder
 ```
-cd <DCFNet>
 git clone https://github.com/vlfeat/matconvnet.git
 ```
 
@@ -12,4 +12,4 @@ Run the following command from the MATLAB command window:
 cd matconvnet
 run matlab/vl_compilenn
 ```
-[**Note**] Configure MatConvNet path in `tracking_env.m`
+3. Configure MatConvNet path in `tracking_env.m`
