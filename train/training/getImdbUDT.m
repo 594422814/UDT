@@ -1,4 +1,8 @@
 function imdb = getImdbUDT(varargin)
+% This is for the ILSVRC2015 dataset
+% If train the network using OxUvA, you should change the settings such as "set_name", "num_all_frame", 
+% and "load('long_term_seg.mat')" .........
+
 opts = [];
 opts.dataDir = fullfile('..','data');
 
