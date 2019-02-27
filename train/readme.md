@@ -1,14 +1,16 @@
 
-1. Downloading MatConvNet
+1. Download MatConvNet
 ```
 git clone https://github.com/vlfeat/matconvnet.git
 ```
 
-2. Compiling MatConvNet
+2. Compile MatConvNet
 ```
 cd matconvnet
 run matlab/vl_compilenn
 ```
+3. Change the MatConvNet path in `training_env.m`
+
 
 ## Training
 
