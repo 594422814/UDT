@@ -7,7 +7,7 @@ opts.gpus = 3;
 [opts] = vl_argparse(opts, varargin) ;
 
 opts.expDir = fullfile('..', 'data', sprintf('UDT-net-%d-%1.1f', opts.inputSize, opts.padding)) ;
-opts.imdbPath = fullfile('../../DCFNet3.0/data', sprintf('imdb-vid2015-unsuperShort-%d-%1.1f', opts.inputSize, opts.padding), 'imdb.mat');
+opts.imdbPath = fullfile('../data', sprintf('imdb-vid2015-unsupervised-%d-%1.1f', opts.inputSize, opts.padding), 'imdb.mat');
 
 trainOpts.momentum = 0.9;
 trainOpts.weightDecay = 0.0005;
@@ -36,7 +36,7 @@ r = gaussian_shaped_labels(sigma, win_sz);
 net = init_UDT('inputSize', opts.inputSize, 'padding', opts.padding);
 
 if exist(opts.imdbPath, 'file')
-    imdb = load(opts.imdbPath) ;
+    imdb = load(opts.imdbPath);
 else
     imdb = getImdbUDT('output_size', opts.inputSize,...
         'padding', opts.padding) ;
