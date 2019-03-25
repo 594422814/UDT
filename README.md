@@ -1,4 +1,4 @@
-# UDT
+# Unsuprvised Deep Tracking
 This repository includes the code for tracker UDT.
 
 **Unsupervised Deep Tracking**
