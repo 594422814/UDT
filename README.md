@@ -17,7 +17,7 @@ Our baseline method is DCFNet and many parts of the code are from [DCFNet](https
 
 ### Citation
 If you find this work useful for your research, please consider citing our work and DCFNet:
-'''
+```
 @article{Wang_2019_Unsupervised,
     title={Unsupervised Deep Tracking},
     author={Wang, Ning and Song, Yibing and Ma, Chao and Zhou, Wengang and Liu, Wei and Li, Houqiang},
@@ -31,4 +31,4 @@ If you find this work useful for your research, please consider citing our work 
     Journal = {arXiv preprint arXiv:1704.04057},
     Year = {2017}
 }
-'''
+```
