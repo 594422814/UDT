@@ -10,3 +10,5 @@ to appear in *CVPR 2019*
 <div align="center">
   <img src="UDT.png" width="700px" />
 </div>
+
+## Citation
