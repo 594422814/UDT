@@ -1,0 +1,12 @@
+toolkit.version=4.1
+toolkit.mex.hash=1a421c3e0dfd79a611671b54d1899126
+toolkit.trax.hash=4129bc50d226bbdca77a2aa37d204374
+tracker.identifier=MCCT
+tracker.protocol=file
+tracker.interpreter=
+timestamp=2017-07-22 09:24:25
+platform=PCWIN64
+platform.maxsize=281474976710655.000000
+platform.endian=L
+environment=matlab
+environment.version=8.6.0.267246 (R2015b)
