@@ -1,7 +1,7 @@
 # Unsupervised Deep Tracking
 This repository includes the code for tracker UDT.
 
-**Unsupervised Deep Tracking** [paper link](http://arxiv.org/abs/1904.01828)
+**Unsupervised Deep Tracking**   [paper link](http://arxiv.org/abs/1904.01828)
 
 Ning Wang, Yibing Song, Chao Ma, Wengang Zhou, Wei Liu, and Houqiang Li 
 
