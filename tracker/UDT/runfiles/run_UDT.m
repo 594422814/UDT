@@ -14,10 +14,10 @@ param = [];
 param.gpu = true;
 param.visual = false;
 param.net = net;
-param.interp_factor = 0.011; 
-param.scale_penalty = 1;   
+param.interp_factor = 0.01; 
+param.scale_penalty = 1.2;   
 param.scale_step = 1.015;  
-param.padding = 2.0;
+param.padding = 1.8;
 param = vl_argparse(param, varargin) ;
 
 tic;
