@@ -28,10 +28,21 @@ cd training/dataPreprocessing
 
 As discussed in the paper, using more data slightly improves the performance
 
+3.Data Preprocessing using the image entropy and HOG-based KCF tracker
 
-## Training
+Please refer to `getImdbDCFNetUn_entropy.m` and `KCFtracker.m`
+
+
+## Training for UDT (CVPR version)
 
 1. Train an unsupervised model.
 ```
 run train_UDT.m;
+```
+
+## Training for LUDT (IJCV version)
+
+1. Train an unsupervised model.
+```
+run train_DCFNet_3loss_newdata.m;
 ```
