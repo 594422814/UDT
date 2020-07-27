@@ -5,7 +5,7 @@ This repository includes the code for tracker UDT (conference version) and LUDT 
 
 Ning Wang, Wengang Zhou, Yibing Song, Chao Ma, Wei Liu, and Houqiang Li 
 
-Accepted by *IJCV*
+Accepted by *IJCV 2020*
 
 This is the journal version of our previous work. We make three changes: (1) We have extended the original multi-frame validation strategy. (2) We utilize an entropy-based image patch selection and HOG-based KCF tracker for data-preprocessing. (3) We visualized and analyzed the unsupervised feature representations. We have conducted more experiments on VOT2017/2018, LaSOT, and TrackingNet to justify our tracker.
 
