@@ -1,5 +1,13 @@
 # Unsupervised Deep Tracking
-This repository includes the code for tracker UDT.
+This repository includes the code for tracker UDT (conference version) and LUDT (journal version).
+
+**Unsupervised Deep Representation Learning for Real-Time Tracking**   [paper link](https://arxiv.org/abs/2007.11984)
+
+Ning Wang, Wengang Zhou, Yibing Song, Chao Ma, Wei Liu, and Houqiang Li 
+
+Accepted by *IJCV*
+
+This is the journal version of our previous work. We make three changes: (1) We have extended the original multi-frame validation strategy. (2) We utilize an entropy-based image patch selection and HOG-based KCF tracker for data-preprocessing. (3) We visualized and analyzed the unsupervised feature representations. We have conducted more experiments on VOT2017/2018, LaSOT, and TrackingNet to justify our tracker.
 
 **Unsupervised Deep Tracking**   [paper link](http://arxiv.org/abs/1904.01828)
 
@@ -9,7 +17,7 @@ In *CVPR 2019*
 
 ### Pytorch Version 
 
-Pytorch implementation is available at [UDT_pytorch](https://github.com/594422814/UDT_pytorch).
+Pytorch implementation of a simplified UDT is available at [UDT_pytorch](https://github.com/594422814/UDT_pytorch).
 
 ![](../master/UDT.png)
 
